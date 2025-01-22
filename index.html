@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D карта в A-Frame</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-assets>
+        <a-asset-item id="mapModel" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\source\map.glb"></a-asset-item>
+		<a-asset-item id="myTexture1" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_0.png"></a-asset-item>
+		<a-asset-item id="myTexture2" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_1.png"></a-asset-item>
+		<a-asset-item id="myTextur3" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_2.png"></a-asset-item>
+		<a-asset-item id="myTexture4" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_3.png"></a-asset-item>
+		<a-asset-item id="myTexture5" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_4.png"></a-asset-item>
+		<a-asset-item id="myTexture6" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_5.png"></a-asset-item>
+		<a-asset-item id="myTexture7" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_6.png"></a-asset-item>
+		<a-asset-item id="myTexture8" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_7.png"></a-asset-item>
+		<a-asset-item id="myTexture9" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_8.png"></a-asset-item>
+		<a-asset-item id="myTexture10" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_9.png"></a-asset-item>
+		<a-asset-item id="myTexture11" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_10.png"></a-asset-item>
+		<a-asset-item id="myTexture12" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_11.png"></a-asset-item>
+		<a-asset-item id="myTexture13" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_12.png"></a-asset-item>
+		<a-asset-item id="myTexture14" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_13.png"></a-asset-item>
+		<a-asset-item id="myTexture15" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_14.png"></a-asset-item>
+		<a-asset-item id="myTexture16" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_15.png"></a-asset-item>
+		<a-asset-item id="myTexture17" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_16.png"></a-asset-item>
+		<a-asset-item id="myTexture18" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_17.png"></a-asset-item>
+		<a-asset-item id="myTexture19" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_18.png"></a-asset-item>
+		<a-asset-item id="myTexture20" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_19.png"></a-asset-item>
+		<a-asset-item id="myTexture21" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_20.png"></a-asset-item>
+		<a-asset-item id="myTexture22" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_21.png"></a-asset-item>
+		<a-asset-item id="myTexture23" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_22.png"></a-asset-item>
+		<a-asset-item id="myTexture24" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_23.png"></a-asset-item>
+		<a-asset-item id="myTexture25" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_24.png"></a-asset-item>
+		<a-asset-item id="myTexture26" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_25.png"></a-asset-item>
+		<a-asset-item id="myTexture27" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_26.png"></a-asset-item>
+		<a-asset-item id="myTexture28" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_27.png"></a-asset-item>
+		<a-asset-item id="myTexture29" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_28.png"></a-asset-item>
+		<a-asset-item id="myTexture30" src="C:\Users\S.Klishin\Desktop\game\gorilla-tag-map\textures\gltf_embedded_29.png"></a-asset-item>
+	  </a-assets>
+
+
+      <a-entity gltf-model="#mapModel" position="1 1 10" scale="10 10 10"></a-entity>
+
+
+
+	   <a-entity camera look-controls wasd-controls position="1 1 10"></a-entity>
+		<a-light type="ambient" color="#FFF"></a-light>
+      <a-light type="directional" position="-1 1 1" intensity="0.5"></a-light>
+    </a-scene>
+  </body>
+</html>
